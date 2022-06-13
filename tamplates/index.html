@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {%block "body"%}
+
+<style>
+    .col-lg-4 {
+        margin-top: 5%;
+    }
+</style>
+
+
+
+<div class="pics" height="200">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1600x900/?ocean,water" height="400px" width="400px" class="d-block w-100" alt="Image Not Load">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?Waterfall,snowfall" height="400px" width="400px" class="d-block w-100" alt="Image Not Load">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?flower,iceland" height="400px" width="400px" class="d-block w-100" alt="Image Not Load">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?vellage,rain" height="400px" width="400px" class="d-block w-100" alt="Image Not Load">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x900/?mountian,ice" height="400px" width="400px" class="d-block w-100" alt="Image Not Load">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+</div>
+
+
+
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<div class="jumbotron container-fluid  py-5 px-5">
+    <h1 class="display-3">Contact Us</h1>
+    <p class="lead">Share Your Feedback</p>
+    <hr class="my-2">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/contact" role="button">Contact Us</a>
+    </p>
+</div>
+
+
+{%endblock "body" %}
